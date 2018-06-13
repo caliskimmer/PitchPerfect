@@ -28,6 +28,11 @@ class RecordViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // TODO: send audio to next view
+        if segue.identifier == "stopRecording" {
+            let changeVoiceViewController = segue.destination as! ChangeVoiceViewController
+            let recordedAudioURL = sender as! URL
+            changeVoiceViewController.recordedAudioURL = recordedAudioURL
+        }
     }
 
     @IBAction func toggleRecording(_ sender: UIButton) {
@@ -49,16 +54,19 @@ class RecordViewController: UIViewController {
     }
 }
 
+//MARK: AVAudioRecorderDelegate methods
+
 extension RecordViewController: AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if flag {
-            performSegue(withIdentifier: "ShowEffects", sender: audioRecorder.url)
+            performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
         } else {
             print("Failed to record")
         }
     }
 }
 
+//MARK: Private methods
 private extension RecordViewController {
     func recordAudio() {
         let directory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B59A63620CF734900621B1E /* ChangeVoiceViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B59A63520CF734900621B1E /* ChangeVoiceViewController+Audio.swift */; };
 		0BE051D620C4BBA9006A3605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE051D520C4BBA9006A3605 /* AppDelegate.swift */; };
 		0BE051D820C4BBA9006A3605 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE051D720C4BBA9006A3605 /* RecordViewController.swift */; };
 		0BE051DB20C4BBA9006A3605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE051D920C4BBA9006A3605 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B59A63520CF734900621B1E /* ChangeVoiceViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChangeVoiceViewController+Audio.swift"; sourceTree = "<group>"; };
 		0BE051D220C4BBA9006A3605 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE051D520C4BBA9006A3605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BE051D720C4BBA9006A3605 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				0BE051DE20C4BBAB006A3605 /* LaunchScreen.storyboard */,
 				0BE051E120C4BBAB006A3605 /* Info.plist */,
 				0BE051E920C65BB2006A3605 /* ChangeVoiceViewController.swift */,
+				0B59A63520CF734900621B1E /* ChangeVoiceViewController+Audio.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B59A63620CF734900621B1E /* ChangeVoiceViewController+Audio.swift in Sources */,
 				0BE051EA20C65BB2006A3605 /* ChangeVoiceViewController.swift in Sources */,
 				0BE051D820C4BBA9006A3605 /* RecordViewController.swift in Sources */,
 				0BE051D620C4BBA9006A3605 /* AppDelegate.swift in Sources */,
